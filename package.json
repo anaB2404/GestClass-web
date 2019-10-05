@@ -1,0 +1,15 @@
+{
+  "name": "GestClass-web",
+  "version": "1.0.0",
+  "description": "Projeto de Gestão Escolar",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GestClass",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.4.2",
+    "izimodal": "^1.5.1",
+    "jquery": "^3.3.1",
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}

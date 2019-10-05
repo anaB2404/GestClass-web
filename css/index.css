@@ -1,17 +1,42 @@
+.btn-flat{
+    margin-right: -10px !important;
+}
+.btn-default{
+    text-transform: inherit;
+    border: 0.5px solid #fff;
+    color: #fff;
+    transition: 0.2s;
+}
+.btn-default:hover{
+    background: #fff;
+    color: #29b6f6;
+    transform: translateY(-2px);
+}
+.btn-default-light{
+    text-transform: inherit;
+    border: 0.5px solid #29b6f6;
+    color: #29b6f6;
+    transition: 0.2s;
+}
+.btn-default-light:hover{
+    background: #29b6f6;
+    color: #fff;
+    transform: translateY(-2px);
+}
+.btn-default-text{
+    text-transform: inherit;
+    color: #fff;
+    transition: 0.2s;
+}
+.btn-default-text:hover{
+    background-color: transparent;
+    transform: translateY(-2px);
+}
 .parallax-container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .parallax{
     opacity: 0.6;
-}
-
-.cardZoom{
-    transition: 0.2s;
-} 
-
-.cardZoom:hover{
-    transform: translateY(-2px);
 }

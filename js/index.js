@@ -1,5 +1,5 @@
 // altura da tela
-var _AlturaDocumento = $(window).height();
+var viewHeight = $(window).height();
 var menuHeight = $(".navbar-fixed").height();
 
 // Sidenav
@@ -17,3 +17,21 @@ M.Slider.init(slider, {
 // Parallax
 const parallax = document.querySelector('.parallax')
 M.Parallax.init(parallax,{})
+
+// Scrollspy
+const ss = document.querySelectorAll('.scrollspy')
+M.ScrollSpy.init(ss, {})
+
+// conta os caracteres do textarea do Contato
+$("#mensagemContato").keyup(function () {
+    var max = parseInt($("#mensagemContato").attr('maxlength'));
+    var tamanho = $('#mensagemContato').val().length;
+    var newLength = max - tamanho;
+    if (newLength > 0) {
+        $("#spanMensagemContato").html(newLength + " caracteres restantes");
+    } else if (newLength == 0) {
+        $("#spanMensagemContato").html(null);
+    } else {
+        $("#spanMensagemContato").html(null);
+    }
+});
