@@ -1,15 +1,25 @@
 {
-  "name": "GestClass-web",
-  "version": "1.0.0",
-  "description": "Projeto de Gestão Escolar",
+  "name": "gestclass-web",
+  "version": "1.3.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anaB2404/GestClass-web.git"
+  },
   "author": "GestClass",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anaB2404/GestClass-web/issues"
+  },
+  "homepage": "https://github.com/anaB2404/GestClass-web#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.4.2",
-    "izimodal": "^1.5.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.1",
+    "lax.js": "^1.2.3",
     "materialize-css": "^1.0.0-rc.2"
   }
 }
