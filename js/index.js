@@ -71,3 +71,13 @@ $(".btnCloseLogin").on("click", function () {
     $(".loginBox").toggleClass("mostraLogin")
     document.body.style.overflowY = "scroll"
 });
+
+// slide da secao de cadastro
+$(".btnOpenRegister").on("click", function () {
+    $(".registerBox").toggleClass("mostraRegister")
+    document.body.style.overflowY = "hidden"
+});
+$(".btnCloseRegister").on("click", function () {
+    $(".registerBox").toggleClass("mostraRegister")
+    document.body.style.overflowY = "scroll"
+});

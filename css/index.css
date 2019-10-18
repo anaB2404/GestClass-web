@@ -139,7 +139,7 @@ blockquote{
     }
 }
 
-/* css for slide of login */
+/* css for slide of login and register*/
 .loginBox{
   position: absolute;
   top: 0;
@@ -172,4 +172,35 @@ blockquote{
 }
 .linkA:hover{
     text-decoration: underline;
+}
+
+.registerBox{
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  transition: 1s;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register-form{
+  position: absolute;
+  color: #212121;
+  width: 50vw;
+}
+.btnCloseRegister{
+  color: #000;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+  font-size: 24px;
+  opacity: 1;
+}
+.mostraRegister{
+  right: 0;
 }
