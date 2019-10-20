@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif !important;
-  height: 10000px;
 }
 
 .btn-flat{
@@ -34,4 +33,3 @@ body {
     background-color: transparent;
     transform: translateY(-2px);
 }
-
