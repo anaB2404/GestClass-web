@@ -47,17 +47,6 @@ window.onload = function () {
     window.requestAnimationFrame(updateLax)
 }
 
-// mudar o menu apos rolar a pagina
-$(function () {
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('#menu').addClass('navbar-fixed')
-        } else {
-            $('#menu').removeClass('navbar-fixed')
-        }
-    })
-})
-
 // modal
 const modal = document.querySelector('.modal')
 M.Modal.init(modal, {})
@@ -74,6 +63,11 @@ $(".btnCloseLogin").on("click", function () {
 
 // slide da secao de cadastro
 $(".btnOpenRegister").on("click", function () {
+    $(".registerBox").toggleClass("mostraRegister")
+    document.body.style.overflowY = "hidden"
+});
+$(".btnOpenRegisterLogin").on("click", function () {
+    $(".loginBox").toggleClass("mostraLogin")
     $(".registerBox").toggleClass("mostraRegister")
     document.body.style.overflowY = "hidden"
 });

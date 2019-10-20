@@ -1,57 +1,66 @@
+body{
+  overflow-x: hidden;
+}
 .slider .slides {
     background-color: transparent;
 }
 .btn-flat{
     margin-right: -10px !important;
+    transition: 0.2s;
 }
-.btn-default{
+.btnDefault{
     text-transform: inherit;
     border: 0.5px solid #fff;
     color: #fff;
-    transition: 0.2s;
 }
-.btn-default:hover{
+.btnDefault:hover{
     background: #fff;
     color: #29b6f6;
 }
-.btn-default-light{
+.btnLight{
     text-transform: inherit;
     border: 0.5px solid #29b6f6;
     color: #29b6f6;
-    transition: 0.2s;
 }
-.btn-default-light:hover{
+.btnLight:hover{
     background: #29b6f6;
     color: #fff;
 }
-.btn-default-text{
+.btnText{
     text-transform: inherit;
     color: #fff;
-    transition: 0.2s;
 }
-.btn-default-text:hover{
+.btnText:hover{
     background: #fff;
     color: #29b6f6;
 }
-.btn-default-home{
+.btnHome{
     text-transform: inherit;
     border: 0.5px solid #212121;
     color: #212121;
-    transition: 0.2s;
     margin: 20px 20px 0 0 !important;
 }
-.btn-default-home:hover{
+.btnHome:hover{
     background: #212121;
     color: #fff;
 }
-.btn-default-login{
+.btnHomeFill{
+    text-transform: inherit;
+    background: #212121;
+    color: #fff;
+    margin: 20px 20px 0 0 !important;
+}
+.btnHomeFill:hover{
+    background: #fff;
+    color: #212121;
+}
+.btnLogin{
     text-transform: inherit;
     border: 0.5px solid #212121;
     color: #212121;
-    transition: 0.2s;
     margin-right: 0 !important;
 }
-.btn-default-login:hover{
+.btnLogin:hover{
     background: #212121;
     color: #fff;
 }
@@ -62,8 +71,16 @@ blockquote{
     border-color: #212121;
     font-size: 18px;
 }
-.section-cards{
-    padding: 5vh 0 1vh 0;
+.sectionCards{
+    padding: 9vh 0 5vh 0;
+}
+.cardHover{
+    padding: 5vh;
+    transition: 0.2s;
+    border-radius: 4px;
+}
+.cardHover:hover{
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.1), 0 4px 30px 0 rgba(0,0,0,0.32);
 }
 .iconSocial {
   transition: 0.2s;
@@ -153,7 +170,7 @@ blockquote{
   align-items: center;
   justify-content: center;
 }
-.login-form{
+.loginForm{
   position: absolute;
   color: #212121;
   width: 50vw;
@@ -187,11 +204,6 @@ blockquote{
   align-items: center;
   justify-content: center;
 }
-.register-form{
-  position: absolute;
-  color: #212121;
-  width: 50vw;
-}
 .btnCloseRegister{
   color: #000;
   position: absolute;
@@ -203,4 +215,5 @@ blockquote{
 }
 .mostraRegister{
   right: 0;
+  position: fixed;
 }

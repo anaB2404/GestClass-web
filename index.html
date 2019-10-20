@@ -23,7 +23,7 @@
 <body class="scrollspy" id="home">
 
     <header>
-        <div id="menu">
+        <div class="navbar-fixed">
             <nav class="light-blue lighten-1">
                 <div class="container">
                     <div class="nav-wrapper">
@@ -33,19 +33,19 @@
                         </a>
                         <ul class="right hide-on-med-and-down">
                             <li>
-                                <a href="#home" class="btn-flat btn-default-text">Home</a>
+                                <a href="#home" class="btn-flat btnText">Home</a>
                             </li>
                             <li>
-                                <a href="#sobre" class="btn-flat btn-default-text">Sobre</a>
+                                <a href="#sobre" class="btn-flat btnText">Sobre</a>
                             </li>
                             <li>
-                                <a href="#recursos" class="btn-flat btn-default-text">Recursos</a>
+                                <a href="#recursos" class="btn-flat btnText">Recursos</a>
                             </li>
                             <li>
-                                <a href="#contato" class="btn-flat btn-default-text">Contato</a>
+                                <a href="#contato" class="btn-flat btnText">Contato</a>
                             </li>
                             <li>
-                                <a href="#" class="btn-flat btn-default btnOpenLogin">Login</a>
+                                <a href="#" class="btn-flat btnDefault btnOpenLogin">Login</a>
                             </li>
                         </ul>
                     </div>
@@ -68,6 +68,9 @@
             <li>
                 <a href="#" class="waves-effect waves-light btnOpenLogin">Login</a>
             </li>
+            <li>
+                <a href="#" class="waves-effect waves-light btnOpenRegister">Cadastro</a>
+            </li>
         </ul>
     </header>
 
@@ -82,10 +85,10 @@
                             <blockquote>GestClass é uma plataforma que ajuda o corpo docente escolar a gerenciar o
                                 ambiene educacional com
                                 mais facilidade</blockquote>
-                            <button class="btn-flat btn-large btn-default-home btnOpenRegister">
+                            <button class="btn-flat btn-large btnHomeFill btnOpenRegister">
                                 Cadastre - se
                             </button>
-                            <button type="submit" class="btn-flat btn-large btn-default-home">
+                            <button type="submit" class="btn-flat btn-large btnHome">
                                 Veja mais
                             </button>
                         </div>
@@ -125,11 +128,11 @@
         </ul>
     </section>
 
-    <section class="section center section-cards">
+    <section class="section center sectionCards">
         <div class="container">
             <div class="row">
                 <div class="col s12 m4">
-                    <div class="grey-text text-darken-4">
+                    <div class="cardHover grey-text text-darken-4">
                         <i class="fas fa-cogs fa-6x"></i>
                         <h5>
                             Gestão Escolar
@@ -140,7 +143,7 @@
                     </div>
                 </div>
                 <div class="col s12 m4">
-                    <div class="grey-text text-darken-4">
+                    <div class="cardHover grey-text text-darken-4">
                         <i class="far fa-paper-plane fa-6x"></i>
                         <h5>
                             Comunicação direta
@@ -151,7 +154,7 @@
                     </div>
                 </div>
                 <div class="col s12 m4">
-                    <div class="grey-text text-darken-4">
+                    <div class="cardHover grey-text text-darken-4">
                         <i class="fas fa-chalkboard-teacher fa-6x"></i>
                         <h5>
                             Aprendizado Online
@@ -186,17 +189,17 @@
     <section class="scrollspy section center">
         <div class="container">
             <div class="row">
-                <div class="col s12">
-                    <h3 class="grey-text text-darken-4">Siga a GestClass</h3>
-                    <p class="grey-text text-darken-4">Siga - nos em nossas redes sociais para ver ofertas especiais e
+                <div class="col s12 grey-text text-darken-4">
+                    <h3>Siga a GestClass</h3>
+                    <p>Siga - nos em nossas redes sociais para ver ofertas especiais e
                         ficar por dentro de todas atualizações</p>
-                    <a href="#">
+                    <a href="#" class="grey-text text-darken-4">
                         <i class="fab iconSocial fa-facebook fa-3x"></i>
                     </a>
-                    <a href="#">
+                    <a href="#" class="grey-text text-darken-4">
                         <i class="fab iconSocial fa-twitter fa-3x"></i>
                     </a>
-                    <a href="#">
+                    <a href="#" class="grey-text text-darken-4">
                         <i class="fab iconSocial fa-instagram fa-3x"></i>
                     </a>
                 </div>
@@ -273,7 +276,7 @@
                                     <span class="helper-text red-text" id="spanMensagemContato"></span>
                                 </div>
                                 <div class="input-field right-align">
-                                    <button type="submit" class="btn-flat btn-default-light">
+                                    <button type="submit" class="btn-flat btnlight">
                                         Enviar mensagem <i class="far fa-paper-plane"></i>
                                     </button>
                                 </div>
@@ -297,8 +300,8 @@
                             maxlength="120"></textarea>
                         <span class="helper-text red-text" id="spanMensagemContato"></span>
                     </div>
-                    <div class="input-field right-align s12">
-                        <button type="submit" class="btn-flat btn-large btn-default-light">
+                    <div class="input-field right-align col s12">
+                        <button type="submit" class="btn-flat btn-large btnLight">
                             Enviar mensagem <i class="far fa-paper-plane"></i>
                         </button>
                     </div>
@@ -325,7 +328,7 @@
         <div class="btnCloseLogin">
             <i class="fas fa-times"></i>
         </div>
-        <form class="login-form" action="index.html" method="post">
+        <form class="loginForm" action="index.html" method="post">
             <h1 class="grey-text text-darken-4">Login</h1>
             <div class="input-field">
                 <input type="text" class="inputLogin" name="" placeholder="Email"/>
@@ -335,12 +338,12 @@
                 <a href="#" class="linkA">Esqueci minha senha</a>
             </div>
             <div class="input-field right-align">
-                <button type="submit" class="btn-flat btn-large btn-default-login">
+                <button type="submit" class="btn-flat btn-large btnLogin">
                     Logar <i class="fas fa-user-check"></i>
                 </button>
             </div>
             <div class="input-field right-align">
-                <span class="grey-text text-darken-4">Não possui conta ? <a href="#" class="linkA btnOpenRegister">Cadastre - se</a></span>
+                <span class="grey-text text-darken-4">Não possui conta ? <a href="#" class="linkA btnOpenRegisterLogin">Cadastre - se</a></span>
             </div>
         </form>
     </div>
@@ -349,45 +352,28 @@
         <div class="btnCloseRegister">
             <i class="fas fa-times"></i>
         </div>
-        <form class="register-form" action="index.html" method="post">
+        <form class="loginForm" action="index.html" method="post">
             <h1 class="grey-text text-darken-4">Cadastre - se</h1>
             <div class="input-field">
-                <input type="text" class="inputRegister" name="" placeholder="Email"/>
-            </div>
-            <div class="input-field">
-                <input type="password" class="inputRegister" name="" placeholder="Senha"/>
+                <input type="text" class="inputLogin" name="" placeholder="Email" />
             </div>
             <div class="input-field right-align">
-                <button type="submit" class="btn-flat btn-large btn-default-register">
-                    Logar <i class="fas fa-user-check"></i>
+                <input type="password" class="inputLogin" name="" placeholder="Senha" />
+            </div>
+            <div class="input-field right-align">
+                <input type="password" class="inputLogin" name="" placeholder="Confirme sua senha" />
+            </div>
+            <div class="input-field right-align">
+                <button type="submit" class="btn-flat btn-large btnLogin">
+                    Cadastrar <i class="fas fa-user-plus"></i>
                 </button>
             </div>
             <div class="input-field right-align">
-                <span class="grey-text text-darken-4">Não possui conta ? <a href="#secao02" class="linkA">Cadastre - se</a></span>
+                <span class="grey-text text-darken-4">Já possui uma conta ? <a href="#" class="linkA btnOpenRegisterLogin">Logar</a></span>
             </div>
         </form>
     </div>
-
-    <!-- <div id="modalLogin" class="modal">
-        <div class="modal-content">
-            <form class="grey-text text-darken-4">
-                <h2 class="grey-text text-darken-4">Login</h2>
-                <div class="input-field">
-                    <input type="text" placeholder="Email">
-                </div>
-                <div class="input-field right-align">
-                    <input type="text" placeholder="Senha">
-                    <a href="" class="">Esqueci minha senha</a>
-                </div>
-                <div class="input-field right-align">
-                    <button type="submit" class="btn-flat btn-default-light">
-                        Logar <i class="fas fa-user-check"></i>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div> -->
-
+    
     <!-- Bibliotecas JS -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
