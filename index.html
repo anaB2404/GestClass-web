@@ -172,16 +172,16 @@
 
     <section class="scrollspy section light-blue lighten-5" id="sobre">
         <div class="container">
-            <div class="row center">
-                <div class="col s12 m6 l4 black">
-
-                </div>
-                <div class="col s12 m6 l4 black">
-
-                </div>
-                <div class="col s12 m6 l4 black">
-
-                </div>
+            <div class="row">
+                <h2 class="grey-text text-darken-4">Sobre nós</h2>
+                <p class="grey-text text-darken-4 flow-text">
+                    A nossa proposta é disponibilizar a escola um sistema web junto com um aplicativo onde
+                    venderíamos uma licença de um ano à instituição e se os mesmos quisessem mais funções,
+                    essas funções seriam cobradas.
+                    O sistema teria as funções básicas que a escola necessita e o diferencial seria a facilidade no
+                    acompanhamento da vida escolar dos filhos, a facilidade na comunicação entre pais e escola, e
+                    a facilidade do acompanhamento do rendimento dos filhos na escola.
+                </p>
             </div>
         </div>
     </section>
@@ -211,31 +211,65 @@
         <div class="container">
             <h2 class="">Recursos</h2>
             <div class="row">
-                <div class="col s12 m6 l4">
+                <div class="col s12 m6">
                     <blockquote>
                         <!-- <i class="material-icons">3d_rotation</i> -->
-                        <h5>Chamada</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, dicta autem possimus
-                            quas blanditiis quaerat fuga quae odit similique animi necessitatibus, enim alias
-                            accusantium, culpa quidem rem ipsam sunt reprehenderit.</p>
+                        <h5>Escola</h5>
+                        <p>
+                            <ul>
+                                <li>• Cadastro das pessoas</li>
+                                <li>• Validação das notas</li>
+                                <li>• Comunicados</li>
+                                <li>• Disponibilização calendário acadêmico</li>
+                            </ul>
+                        </p>
                     </blockquote>
                 </div>
-                <div class="col s12 m6 l4">
+                <div class="col s12 m6">
                     <blockquote>
                         <!-- <i class="material-icons">3d_rotation</i> -->
-                        <h5>Fechamento de média</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, dicta autem possimus
-                            quas blanditiis quaerat fuga quae odit similique animi necessitatibus, enim alias
-                            accusantium, culpa quidem rem ipsam sunt reprehenderit.</p>
+                        <h5>Professores</h5>
+                        <p>
+                            <ul>
+                                <li>• Lançar notas de provas, atividades e avaliações</li>
+                                <li>• Disponibilização e recebimento de matérias de aula</li>
+                                <li>• Registrar frequência dos alunos em sala de aula</li>
+                            </ul>
+                        </p>
                     </blockquote>
                 </div>
-                <div class="col s12 m6 l4">
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
                     <blockquote>
                         <!-- <i class="material-icons">3d_rotation</i> -->
-                        <h5>Contato direto</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, dicta autem possimus
-                            quas blanditiis quaerat fuga quae odit similique animi necessitatibus, enim alias
-                            accusantium, culpa quidem rem ipsam sunt reprehenderit.</p>
+                        <h5>Pais</h5>
+                        <p>
+                            <ul>
+                                <li>• Acesso ao boletim escolar</li>
+                                <li>• Acessem sua frequência escolar</li>
+                                <li>• Possam ver o calendário escolar com as datas onde haverá ou não aula (reunião de pais, mestres, etc)
+                                </li>
+                                <li>• Notificações da secretaria</li>
+                                <li>• Urgências (advertências, anotações etc)</li>
+                            </ul>
+                        </p>
+                    </blockquote>
+                </div>
+                <div class="col s12 m6">
+                    <blockquote>
+                        <!-- <i class="material-icons">3d_rotation</i> -->
+                        <h5>Alunos</h5>
+                        <p>
+                            <ul>
+                                <li>• Acesso ao boletim escolar</li>
+                                <li>• Acessem a grade das matérias</li>
+                                <li>• Acessem sua frequência escolar</li>
+                                <li>• Possam ver o calendário escolar com as datas onde haverá ou não aula (reunião de pais, mestres, etc)
+                                </li>
+                                <li>• Notificações da secretaria</li>
+                            </ul>
+                        </p>
                     </blockquote>
                 </div>
             </div>
@@ -290,13 +324,13 @@
                 <form class="grey-text text-darken-4">
                     <h2 class="">Contate - nos</h2>
                     <div class="input-field col s12 m6">
-                        <input type="text" placeholder="Nome">
+                        <input type="text" placeholder="Nome" class="inputLogin"/>
                     </div>
                     <div class="input-field col s12 m6">
-                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Email" class="inputLogin"/>
                     </div>
                     <div class="input-field col s12">
-                        <textarea class="materialize-textarea" id="mensagemContato" placeholder="Escreva sua mensagem"
+                        <textarea class="materialize-textarea inputLogin" id="mensagemContato" placeholder="Escreva sua mensagem"
                             maxlength="120"></textarea>
                         <span class="helper-text red-text" id="spanMensagemContato"></span>
                     </div>
