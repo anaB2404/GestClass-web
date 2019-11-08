@@ -143,7 +143,7 @@ blockquote{
 /* css for gear svg animation */
 .machine {
   width: 60vmin;
-  fill: #212121; }
+  fill: #fff; }
 
 .small-shadow, .medium-shadow, .large-shadow {
   fill: rgba(0, 0, 0, 0.2); }
