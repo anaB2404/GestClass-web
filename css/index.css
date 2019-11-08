@@ -45,27 +45,27 @@ body{
 
 .btnHome{
     text-transform: inherit;
-    border: 0.5px solid #212121;
-    color: #212121;
+    border: 0.5px solid #fff;
+    color: #fff;
     margin: 20px 20px 0 0 !important;
 }
 
 .btnHome:hover{
-    background: #212121;
-    color: #fff;
+    background: #fff;
+    color: #42a5f5;
 }
 
 .btnHomeFill{
     text-transform: inherit;
-    background: #212121;
-    border: 0.5px solid #212121;
-    color: #fff;
+    background: #fff;
+    border: 0.5px solid #fff;
+    color: #42a5f5;
     margin: 20px 20px 0 0 !important;
 }
 
 .btnHomeFill:hover{
     background: transparent;
-    color: #212121;
+    color: #fff;
 }
 
 .btnLogin{
