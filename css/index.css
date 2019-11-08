@@ -43,29 +43,29 @@ body{
     color: #29b6f6;
 }
 
-.btnHome{
+.btnDark{
     text-transform: inherit;
-    border: 0.5px solid #fff;
+    border: 0.5px solid #212121;
+    color: #212121;
+    margin: 20px 20px 0 0 !important;
+}
+
+.btnDark:hover{
+    background: #212121;
+    color: #fff;
+}
+
+.btnDarkFill{
+    text-transform: inherit;
+    background: #212121;
+    border: 0.5px solid #212121;
     color: #fff;
     margin: 20px 20px 0 0 !important;
 }
 
-.btnHome:hover{
-    background: #fff;
-    color: #42a5f5;
-}
-
-.btnHomeFill{
-    text-transform: inherit;
-    background: #fff;
-    border: 0.5px solid #fff;
-    color: #42a5f5;
-    margin: 20px 20px 0 0 !important;
-}
-
-.btnHomeFill:hover{
+.btnDarkFill:hover{
     background: transparent;
-    color: #fff;
+    color: #212121;
 }
 
 .btnLogin{
@@ -85,7 +85,7 @@ body{
 }
 
 blockquote{
-    border-color: #fff;
+    border-color: #212121;
     font-size: 18px;
 }
 
@@ -143,33 +143,33 @@ blockquote{
 /* css for gear svg animation */
 .machine {
   width: 60vmin;
-  fill: #fff; }
+  fill: #212121; }
 
 .small-shadow, .medium-shadow, .large-shadow {
   fill: rgba(0, 0, 0, 0.2); }
 
 .small {
-	animation: counter-rotation 3.5s infinite linear;
+	animation: counter-rotation 4.5s infinite linear;
     transform-origin: 100.136px 225.345px;
 }
 .small-shadow {
-	animation: counter-rotation 3.5s infinite linear;
+	animation: counter-rotation 4.5s infinite linear;
     transform-origin: 110.136px 235.345px;
 }
 .medium {
-	animation: rotation 5.25s infinite linear;
+	animation: rotation 6.75s infinite linear;
     transform-origin: 254.675px 379.447px;
 }
 .medium-shadow {
-	animation: rotation 5.25s infinite linear;
+	animation: rotation 6.75s infinite linear;
     transform-origin: 264.675px 389.447px;
 }
 .large {
-    animation: counter-rotation 7s infinite linear;
+    animation: counter-rotation 9s infinite linear;
     transform-origin: 461.37px 173.694px;
 }
 .large-shadow {
-	animation: counter-rotation 7s infinite linear;
+	animation: counter-rotation 9s infinite linear;
     transform-origin: 471.37px 183.694px;
 }
 @keyframes rotation {

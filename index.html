@@ -27,7 +27,7 @@
             <nav class="light-blue lighten-1">
                 <div class="container">
                     <div class="nav-wrapper">
-                        <a href="#home" class="brand-logo"><i class="fas fa-drafting-compass"></i> GestClass</a>
+                        <a href="#home" class="brand-logo"><i class="fas fa-drafting-compass"></i> <span class="hide-on-med-and-down">GestClass</span></a>
                         <a href="#" data-target="mobile-nav" class="sidenav-trigger">
                             <i class="material-icons">clear_all</i>
                         </a>
@@ -45,7 +45,7 @@
                                 <a href="#contato" class="btn-flat btnText">Contato</a>
                             </li>
                             <li>
-                                <a href="#" class="btn-flat btnDefault btnOpenLogin">Login</a>
+                                <a href="#modalLogin" class="btn-flat btnDefault modal-trigger">Login</a>
                             </li>
                         </ul>
                     </div>
@@ -66,33 +66,30 @@
                 <a href="#contato" class="waves-effect waves-light">Contato</a>
             </li>
             <li>
-                <a href="#" class="waves-effect waves-light btnOpenLogin">Login</a>
-            </li>
-            <li>
-                <a href="#" class="waves-effect waves-light btnOpenRegister">Cadastro</a>
+                <a href="#modalLogin" class="waves-effect waves-light btnOpenLogin modal-trigger">Login</a>
             </li>
         </ul>
     </header>
 
-    <section class="slider">
+    <div class="slider section">
         <ul class="slides">
             <li>
-                <img src="./assets/img/index_img.png" class="lax"/>
+                <img src="./assets/img/slide2.png" class="lax" data-lax-opacity="0 0.5, 500 0"/>
                 <div class="caption">
                     <div class="row grey-text text-darken-4 lax" data-lax-translate-y="0 0, 400 -50">
                         <div class="col s12 m12 l7">
-                            <h2 class="textSlide">Vamos começar</h2>
-                            <blockquote class="textSlide">GestClass é uma plataforma que ajuda o corpo docente escolar a gerenciar o
-                                ambiene educacional com
-                                mais facilidade</blockquote>
-                            <button class="btn-flat btn-large btnHomeFill btnOpenRegister">
-                                Cadastre - se
-                            </button>
-                            <a href="#recursos" class="btn-flat btn-large btnHome">
+                            <h2 class="hide-on-med-and-down">Vamos começar</h2>
+                            <blockquote>
+                                GestClass é uma plataforma que ajuda o corpo docente escolar a gerenciar o ambiene educacional com mais facilidade  
+                            </blockquote>
+                            <a class="btn-flat btn-large btnDark">
+                                Quero fazer parte
+                            </a>
+                            <a href="#recursos" class="btn-flat btn-large btnDarkFill">
                                 Veja mais
                             </a>
                         </div>
-                        <div class="col l4 offset-l1 hide-on-med-and-down">
+                        <div class="col l5 center hide-on-med-and-down">
                             <svg class="machine" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                                 viewBox="0 0 645 526">
                                 <defs />
@@ -126,9 +123,9 @@
                 </div>
             </li>
         </ul>
-    </section>
+    </div>
 
-    <section class="section center sectionCards">
+    <div class="section center sectionCards">
         <div class="container">
             <div class="row">
                 <div class="col s12 m4">
@@ -168,9 +165,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="scrollspy section light-blue lighten-4" id="sobre">
+    <div class="scrollspy section light-blue lighten-5" id="sobre">
         <div class="container">
             <div class="row">
                 <h2 class="grey-text text-darken-4">Sobre nós</h2>
@@ -184,9 +181,9 @@
                 </p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="scrollspy section center">
+    <div class="scrollspy section center">
         <div class="container">
             <div class="row">
                 <div class="col s12 grey-text text-darken-4">
@@ -205,15 +202,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="scrollspy section light-blue lighten-4" id="recursos">
+    <div class="scrollspy section light-blue lighten-5" id="recursos">
         <div class="container">
             <h2 class="">Recursos</h2>
             <div class="row">
                 <div class="col s12 m6">
                     <blockquote>
-                        <!-- <i class="material-icons">3d_rotation</i> -->
                         <h5>Escola</h5>
                         <p>
                             <ul>
@@ -227,7 +223,6 @@
                 </div>
                 <div class="col s12 m6">
                     <blockquote>
-                        <!-- <i class="material-icons">3d_rotation</i> -->
                         <h5>Professores</h5>
                         <p>
                             <ul>
@@ -242,13 +237,13 @@
             <div class="row">
                 <div class="col s12 m6">
                     <blockquote>
-                        <!-- <i class="material-icons">3d_rotation</i> -->
                         <h5>Pais</h5>
                         <p>
                             <ul>
                                 <li>• Acesso ao boletim escolar</li>
                                 <li>• Acessem sua frequência escolar</li>
-                                <li>• Possam ver o calendário escolar com as datas onde haverá ou não aula (reunião de pais, mestres, etc)
+                                <li>• Possam ver o calendário escolar com as datas onde haverá ou não aula (reunião de
+                                    pais, mestres, etc)
                                 </li>
                                 <li>• Notificações da secretaria</li>
                                 <li>• Urgências (advertências, anotações etc)</li>
@@ -258,14 +253,14 @@
                 </div>
                 <div class="col s12 m6">
                     <blockquote>
-                        <!-- <i class="material-icons">3d_rotation</i> -->
                         <h5>Alunos</h5>
                         <p>
                             <ul>
                                 <li>• Acesso ao boletim escolar</li>
                                 <li>• Acessem a grade das matérias</li>
                                 <li>• Acessem sua frequência escolar</li>
-                                <li>• Possam ver o calendário escolar com as datas onde haverá ou não aula (reunião de pais, mestres, etc)
+                                <li>• Possam ver o calendário escolar com as datas onde haverá ou não aula (reunião de
+                                    pais, mestres, etc)
                                 </li>
                                 <li>• Notificações da secretaria</li>
                             </ul>
@@ -274,64 +269,22 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="scrollspy" id="contato">
-        <!-- <div class="container">
-                <div class="row">
-                    <div class="col s12 m6">
-                        <div class="card-panel light-blue lighten-1 white-text center z-depth-3">
-                            <i class="far fa-envelope fa-3x"></i>
-                            <h4>Contate - nos</h4>
-                            <p>Envie uma mensagem para realizar orçamentos, ou se possui alguma dúvida ou sugestão que iremos recebe - lá e responde - lá.</p>
-                        </div>
-                        <ul class="collection with-header z-depth-3 grey-text text-darken-4">
-                            <li class="collection-header">
-                                <h4>Localização</h4>
-                            </li>
-                            <li class="collection-item">GestClass</li>
-                            <li class="collection-item">Rua Cambará, 866 - Jardim Mirai</li>
-                            <li class="collection-item">Itaquaquecetuba - SP</li>
-                        </ul>
-                    </div>
-                    <div class="col s12 m6">
-                        <div class="card-panel z-depth-3">
-                            <form class="grey-text text-darken-4" action="" method="post">
-                                <h5>Por favor preencha este formulário</h5>
-                                <div class="input-field">
-                                    <input type="text" placeholder="Nome">
-                                </div>
-                                <div class="input-field">
-                                    <input type="text" placeholder="Email">
-                                </div>
-                                <div class="input-field">
-                                    <textarea class="materialize-textarea" id="mensagemContato"
-                                        placeholder="Escreva sua mensagem" maxlength="120"></textarea>
-                                    <span class="helper-text red-text" id="spanMensagemContato"></span>
-                                </div>
-                                <div class="input-field right-align">
-                                    <button type="submit" class="btn-flat btnlight">
-                                        Enviar mensagem <i class="far fa-paper-plane"></i>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+    <div class="scrollspy" id="contato">
         <div class="container">
             <div class="row">
                 <form class="grey-text text-darken-4">
                     <h2 class="">Contate - nos</h2>
                     <div class="input-field col s12 m6">
-                        <input type="text" placeholder="Nome" class="inputLogin"/>
+                        <input type="text" placeholder="Nome" class="inputLogin" />
                     </div>
                     <div class="input-field col s12 m6">
-                        <input type="text" placeholder="Email" class="inputLogin"/>
+                        <input type="text" placeholder="Email" class="inputLogin" />
                     </div>
                     <div class="input-field col s12">
-                        <textarea class="materialize-textarea inputLogin" id="mensagemContato" placeholder="Escreva sua mensagem"
-                            maxlength="120"></textarea>
+                        <textarea class="materialize-textarea inputLogin" id="mensagemContato"
+                            placeholder="Escreva sua mensagem" maxlength="120"></textarea>
                         <span class="helper-text red-text" id="spanMensagemContato"></span>
                     </div>
                     <div class="input-field right-align col s12">
@@ -342,33 +295,55 @@
                 </form>
             </div>
         </div>
-    </section>
+    </div>
 
     <footer class="section light-blue lighten-1 white-text center">
         <div class="container">
             <div class="row">
                 <div class="col s12">
-                    <p class="flow-text">GestClass &copy;
+                    <p class="flow-text">
+                        GestClass &copy;
                         <script>
                             document.write(new Date().getFullYear());
                         </script>
+                        | Todos os direitos reservados
                     </p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <div class="loginBox">
+    <div id="modalLogin" class="modal">
+        <div class="modal-content">
+            <form action="index.html" method="post">
+                <h1 class="grey-text text-darken-4">Login</h1>
+                <div class="input-field">
+                    <input type="text" class="inputLogin" name="" placeholder="Email" />
+                </div>
+                <div class="input-field right-align">
+                    <input type="password" class="inputLogin" name="" placeholder="Senha" />
+                    <a href="#" class="linkA">Esqueci minha senha</a>
+                </div>
+                <div class="input-field right-align">
+                    <a href="homeSecretaria.html" class="btn-flat btn-large btnDark">
+                        Logar <i class="fas fa-user-check"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- <div class="loginBox">
         <div class="btnCloseLogin">
             <i class="fas fa-times"></i>
         </div>
         <form class="loginForm" action="index.html" method="post">
             <h1 class="grey-text text-darken-4">Login</h1>
             <div class="input-field">
-                <input type="text" class="inputLogin" name="" placeholder="Email"/>
+                <input type="text" class="inputLogin" name="" placeholder="Email" />
             </div>
             <div class="input-field right-align">
-                <input type="password" class="inputLogin" name="" placeholder="Senha"/>
+                <input type="password" class="inputLogin" name="" placeholder="Senha" />
                 <a href="#" class="linkA">Esqueci minha senha</a>
             </div>
             <div class="input-field right-align">
@@ -376,13 +351,10 @@
                     Logar <i class="fas fa-user-check"></i>
                 </a>
             </div>
-            <div class="input-field right-align">
-                <span class="grey-text text-darken-4">Não possui conta ? <a href="#" class="linkA btnOpenRegisterLogin">Cadastre - se</a></span>
-            </div>
         </form>
-    </div>
+    </div> -->
 
-    <div class="registerBox">
+    <!-- <div class="registerBox">
         <div class="btnCloseRegister">
             <i class="fas fa-times"></i>
         </div>
@@ -403,10 +375,11 @@
                 </button>
             </div>
             <div class="input-field right-align">
-                <span class="grey-text text-darken-4">Já possui uma conta ? <a href="#" class="linkA btnOpenRegisterLogin">Logar</a></span>
+                <span class="grey-text text-darken-4">Já possui uma conta ? <a href="#"
+                        class="linkA btnOpenRegisterLogin">Logar</a></span>
             </div>
         </form>
-    </div>
+    </div> -->
 
     <!-- Bibliotecas JS -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
