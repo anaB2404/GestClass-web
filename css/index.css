@@ -1,60 +1,55 @@
 body{
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
-
 .slider .slides {
     background-color: transparent;
 }
-
+.slides{
+    padding: 10vh 0;
+}
+.textSlide{
+  color:#FFFFFF;
+}
 .btn-flat{
     margin-right: -10px !important;
     transition: 0.2s;
 }
-
 .btnDefault{
     text-transform: inherit;
     border: 0.5px solid #fff;
     color: #fff;
 }
-
 .btnDefault:hover{
     background: #fff;
     color: #29b6f6;
 }
-
 .btnLight{
     text-transform: inherit;
     border: 0.5px solid #29b6f6;
     color: #29b6f6;
 }
-
 .btnLight:hover{
     background: #29b6f6;
     color: #fff;
 }
-
 .btnText{
     text-transform: inherit;
     color: #fff;
 }
-
 .btnText:hover{
     background: #fff;
     color: #29b6f6;
 }
-
 .btnDark{
     text-transform: inherit;
     border: 0.5px solid #212121;
     color: #212121;
     margin: 20px 20px 0 0 !important;
 }
-
 .btnDark:hover{
     background: #212121;
     color: #fff;
 }
-
 .btnDarkFill{
     text-transform: inherit;
     background: #212121;
@@ -62,43 +57,19 @@ body{
     color: #fff;
     margin: 20px 20px 0 0 !important;
 }
-
 .btnDarkFill:hover{
     background: transparent;
     color: #212121;
 }
-
-.btnLogin{
-    text-transform: inherit;
-    border: 0.5px solid #212121;
-    color: #212121;
-    margin-right: 0 !important;
-}
-
-.btnLogin:hover{
-    background: #212121;
-    color: #fff;
-}
-
-.slides{
-    padding: 10vh 0;
-}
-
 blockquote{
     border-color: #212121;
     font-size: 18px;
 }
-
-.textSlide{
-  color:#FFFFFF;
-}
-
 .sectionCards{
     padding: 6vh 0 3vh 0;
     display: flex;
     align-items: center !important;
 }
-
 .cardHover{
     padding: 5vh;
     transition: 0.2s;
@@ -106,11 +77,9 @@ blockquote{
     width: 320px;
     height: 320px;
 }
-
 .cardHover:hover{
     box-shadow: 0 0 1px 0 rgba(0,0,0,0.1), 0 4px 30px 0 rgba(0,0,0,0.32);
 }
-
 .iconSocial {
   transition: 0.2s;
   margin: 5px 25px;
@@ -120,17 +89,14 @@ blockquote{
   transform: scale(1.09);
   color: #3C5A99;
 }
-
 .fa-twitter:hover {
   transform: scale(1.09);
   color: #1DA1F2;
 }
-
 .fa-instagram:hover {
   transform: scale(1.09);
   color: #405DE6;
 }
-
 .inputLogin::placeholder{
     color : #212121;
 }

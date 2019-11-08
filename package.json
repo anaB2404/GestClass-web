@@ -20,6 +20,7 @@
     "@fortawesome/fontawesome-free": "^5.4.2",
     "jquery": "^3.4.1",
     "lax.js": "^1.2.3",
-    "materialize-css": "^1.0.0-rc.2"
+    "materialize-css": "^1.0.0-rc.2",
+    "serve": "^11.2.0"
   }
 }
