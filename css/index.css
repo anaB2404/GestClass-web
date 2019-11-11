@@ -1,12 +1,24 @@
 body{
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
+<<<<<<< HEAD
 .secao{
     padding: 40px 0;
 }
 .slider .slides {
     background-color: transparent;
 }
+=======
+.slider .slides {
+    background-color: transparent;
+}
+.slides{
+    padding: 10vh 0;
+}
+.textSlide{
+  color:#FFFFFF;
+}
+>>>>>>> e65462f438909e8684a8999668ed058b71d58b1d
 .btn-flat{
     margin-right: -10px !important;
     transition: 0.2s;
@@ -58,6 +70,7 @@ body{
     background: transparent;
     color: #212121;
 }
+<<<<<<< HEAD
 .btnLogin{
     text-transform: inherit;
     border: 0.5px solid #212121;
@@ -71,12 +84,21 @@ body{
 .slides{
     padding: 10vh 0;
 }
+=======
+>>>>>>> e65462f438909e8684a8999668ed058b71d58b1d
 blockquote{
     border-color: #212121;
     font-size: 18px;
 }
+<<<<<<< HEAD
 .textSlide{
   color:#FFFFFF;
+=======
+.sectionCards{
+    padding: 6vh 0 3vh 0;
+    display: flex;
+    align-items: center !important;
+>>>>>>> e65462f438909e8684a8999668ed058b71d58b1d
 }
 .cardHover{
     padding: 5vh;
