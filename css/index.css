@@ -1,14 +1,12 @@
 body{
     overflow-x: hidden;
 }
-<<<<<<< HEAD
 .secao{
     padding: 40px 0;
 }
 .slider .slides {
     background-color: transparent;
 }
-=======
 .slider .slides {
     background-color: transparent;
 }
@@ -18,7 +16,6 @@ body{
 .textSlide{
   color:#FFFFFF;
 }
->>>>>>> e65462f438909e8684a8999668ed058b71d58b1d
 .btn-flat{
     margin-right: -10px !important;
     transition: 0.2s;
@@ -31,15 +28,6 @@ body{
 .btnDefault:hover{
     background: #fff;
     color: #29b6f6;
-}
-.btnLight{
-    text-transform: inherit;
-    border: 0.5px solid #29b6f6;
-    color: #29b6f6;
-}
-.btnLight:hover{
-    background: #29b6f6;
-    color: #fff;
 }
 .btnText{
     text-transform: inherit;
@@ -70,7 +58,6 @@ body{
     background: transparent;
     color: #212121;
 }
-<<<<<<< HEAD
 .btnLogin{
     text-transform: inherit;
     border: 0.5px solid #212121;
@@ -84,21 +71,12 @@ body{
 .slides{
     padding: 10vh 0;
 }
-=======
->>>>>>> e65462f438909e8684a8999668ed058b71d58b1d
 blockquote{
     border-color: #212121;
     font-size: 18px;
 }
-<<<<<<< HEAD
 .textSlide{
   color:#FFFFFF;
-=======
-.sectionCards{
-    padding: 6vh 0 3vh 0;
-    display: flex;
-    align-items: center !important;
->>>>>>> e65462f438909e8684a8999668ed058b71d58b1d
 }
 .cardHover{
     padding: 5vh;
@@ -157,11 +135,9 @@ blockquote{
     width: 100%;
     text-align: center;
 }
-
-
-
-
-
+.modal{
+    width: 35%;
+}
 
 /* css for gear svg animation */
 .machine {
@@ -210,66 +186,4 @@ blockquote{
     to   {
         transform: rotate(0deg);
     }
-}
-
-/* css for slide of login and register*/
-.loginBox{
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100vh;
-  background: #fff;
-  transition: 1s;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.loginForm{
-  position: absolute;
-  color: #212121;
-  width: 50vw;
-}
-.btnCloseLogin{
-  color: #000;
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  cursor: pointer;
-  font-size: 24px;
-  opacity: 1;
-}
-.mostraLogin{
-  left: 0;
-}
-.linkA:hover{
-    text-decoration: underline;
-}
-
-.registerBox{
-  position: absolute;
-  top: 0;
-  right: -100%;
-  width: 100%;
-  height: 100vh;
-  background: #fff;
-  transition: 1s;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.btnCloseRegister{
-  color: #000;
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  cursor: pointer;
-  font-size: 24px;
-  opacity: 1;
-}
-.mostraRegister{
-  right: 0;
-  position: fixed;
 }
