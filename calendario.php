@@ -21,7 +21,7 @@
             var calendar = new FullCalendar.Calendar(calendarEl, {
 
                 locale: 'pt-br',
-                plugins: ['interaction', 'dayGrid'],
+                plugins: ['interaction', 'dayGrid','list', 'googleCalendar'],
                 editable: true,
                 eventLimit: true,
                 events: 'php/listarEventosCalendario.php',
