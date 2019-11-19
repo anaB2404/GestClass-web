@@ -24,7 +24,7 @@
                 plugins: ['interaction', 'dayGrid'],
                 editable: true,
                 eventLimit: true,
-                events: 'php/istarEventosCalendario.php',
+                events: 'php/listarEventosCalendario.php',
                 extraParams: function () {
                     return {
                         cachebuster: new Date().valueOf()
