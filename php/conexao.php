@@ -1,6 +1,6 @@
 <?php
 
-    $conexao = mysqli_connect(
+    $conexa = mysqli_connect(
         'localhost',
         'root',
         'usbw',
