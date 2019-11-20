@@ -87,9 +87,16 @@
         <div id="modal1" class="modal">
             <div class="modal-content">
                 <h4>Detalhes do evento</h4>
-                <p><span class="bolder">Titulo do evento &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><span id="title"></span></p> 
-                <p><span class="bolder">Início do evento &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><span id="start"></span></p> 
-                <p><span class="bolder">Fim do evento &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><span id="end"></span></p> 
+                    <dl class="row">
+                        <dt class="col s3 bolder">Titulo do evento</dt>
+                        <dd class="col s9" id="title"></dd><br>
+
+                        <dt class="col s3 bolder">Início do evento</dt>
+                        <dd class="col s9" id="start"></dd><br>
+
+                        <dt class="col s3 bolder">Fim do evento</dt>
+                        <dd class="col s9" id="end"></dd><br>
+                    </dl>
             </div>
             
             <div class="modal-footer">
