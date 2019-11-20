@@ -1,0 +1,16 @@
+#loading {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.bolder{
+    font-weight: bold;
+}
