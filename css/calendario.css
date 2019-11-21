@@ -14,3 +14,8 @@
 .bolder{
     font-weight: bold;
 }
+
+#modalCadastro{
+    max-height: 100%; 
+    overflow: visible;
+}
