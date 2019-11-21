@@ -11,11 +11,11 @@
     margin-top: 10px;
 }
 
-.bolder{
+.bolder {
     font-weight: bold;
 }
 
-#modalCadastro{
-    max-height: 100%; 
+#modalCadastro {
+    max-height: 100%;
     overflow: visible;
 }

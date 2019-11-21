@@ -29,7 +29,7 @@
     <script src='js/daygrid/main.min.js'></script>
     <script src='js/list/main.min.js'></script>
     <script src='js/google-calendar/main.min.js'></script>
-    <script src='js/calendario.js'></script>
+
 </head>
 
 <body>
@@ -103,7 +103,7 @@
             </div>
 
             <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect btn-flat">Fechar</a>
+                <a href="#!" class="modal-close waves-effect btn-flat btnDefault">Fechar</a>
             </div>
         </div>
 
@@ -118,7 +118,8 @@
                     </div>
                 </dl>
                 <div class="row">
-                    <form class="col s12">
+                    <span id="msg-card"></span>
+                    <form class="col s12" id="adicionarEvento" method="POST">
                         <div class="row">
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">format_size</i>
@@ -149,13 +150,13 @@
                                 <label for="first_name">Fim do evento</label>
                             </div>
                         </div>
+                        <div class="modal-footer">
+                            <button class="btn waves-effect btnDefault" type="submit" name="cadEvento" id="cadEvento" value="cadEvento">Cadastrar
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
                     </form>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn waves-effect btnDefault" type="submit" name="cadEvent" id="cadEvent">Cadastrar
-                    <i class="material-icons right">send</i>
-                </button>
             </div>
         </div>
 
@@ -182,6 +183,7 @@
     <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
     <script src="js/homeSecretaria.js"></script>
     <script src="js/default.js"></script>
+    <script src='js/calendario.js'></script>
 
 </body>
 
