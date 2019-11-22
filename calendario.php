@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt">
 
@@ -84,6 +87,12 @@
 
     <div id='loading'>loading...</div>
 
+    <?php
+        if(isset($_SESSION['msg'])){
+            echo $_SESSION['msg'];
+            unset($_SESSION['msg']);
+        }
+    ?>
     <div id='calendar'></div>
 
     <section class="modals">
@@ -118,8 +127,8 @@
                     </div>
                 </dl>
                 <div class="row">
-                    <span id="msg-card"></span>
-                    <form class="col s12" id="adicionarEvento" method="POST">
+                    <span class="msg-cad"></span>
+                    <form id="adicionarEvento" class="col s12" method="POST">
                         <div class="row">
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">format_size</i>
@@ -130,12 +139,12 @@
                                 <i class="material-icons prefix">color_lens</i>
                                 <select class="" name="color" id="color">
                                     <option value="" disabled selected>Escolha uma cor</option>
-                                    <option value="#FFD700">Amarelo</option>
-                                    <option value="#8B0000">Vermelho</option>
-                                    <option value="#228B22">Verde</option>
-                                    <option value="#42A5F5">Azul</option>
-                                    <option value="#A020F0">Roxo</option>
-                                    <option value="#000000">Preto</option>
+                                    <option value="#FFD700" data-icon="assets/img/amarelo.jpg" class="left">Amarelo</option>
+                                    <option value="#8B0000" data-icon="assets/img/vermelho.jpg" class="left">Vermelho</option>
+                                    <option value="#228B22" data-icon="assets/img/verde.jpg" class="left">Verde</option>
+                                    <option value="#42A5F5" data-icon="assets/img/azul.jpg" class="left">Azul</option>
+                                    <option value="#A020F0" data-icon="assets/img/roxo.jpg" class="left">Roxo</option>
+                                    <option value="#000000" data-icon="assets/img/preto.jpg" class="left">Preto</option>
                                 </select>
                                 <!-- <label>Materialize Select</label> -->
                             </div>
@@ -177,8 +186,8 @@
         </div>
     </section>
 
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+    <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script> -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
     <script src="js/homeSecretaria.js"></script>
