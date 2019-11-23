@@ -99,7 +99,7 @@ function DataHora(evento, objeto) {
 $(document).ready(function () {
     $("#adicionarEvento").on("submit", function (event) {
         event.preventDefault();
-        $.ajax({
+       $.ajax({
             method: "POST",
             url: "php/cadastrarEvento.php",
             data: new FormData(this),
@@ -107,7 +107,7 @@ $(document).ready(function () {
             processData: false,
             success: function (retorna) {
                 if (retorna['sit']) {
-                     $(".msg-cad").html(retorna['msg']);
+                    //$(".msg-cad").html(retorna['msg']);
                     location.reload();
                 } else {
                     $(".msg-cad").html(retorna['msg']);
@@ -116,4 +116,3 @@ $(document).ready(function () {
         })
     });
 });
-
