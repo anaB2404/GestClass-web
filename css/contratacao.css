@@ -31,3 +31,6 @@
     background: #fff;
     color: #29b6f6;
 }
+input::placeholder{
+    color: #000;
+}

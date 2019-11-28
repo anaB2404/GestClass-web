@@ -18,6 +18,8 @@ input::placeholder{
 .formPerfil{
   display: flex;
   justify-content: center;
-  
+}
+.titleForm{
+  margin: 0 !important;
 }
 

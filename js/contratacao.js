@@ -8,7 +8,16 @@ function CapturaParametrosUrl() {
         captura = res[1].split('=')
         let parametroEncontrado = captura[0]
         let valorParametro = captura[1]
+        // let select = $('.selectPlanos')
+        if(valorParametro === 'primario'){
+            $('.selectPlanos').val('1')
+        } else if (valorParametro === 'fundamental') {
+            $('.selectPlanos').val('2')
+        }else{
+            $('.selectPlanos').val('3')
+        }
     }
+
 }
 // Sidenav
 const sideNav = document.querySelector('.sidenav')
