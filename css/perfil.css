@@ -1,15 +1,15 @@
 input::placeholder{
   color: #000;
 }
-.btnDefault{
-  text-transform: inherit;
-  border: 0.5px solid #212121;
-  color: #212121;
+.btnDefaultPerfil{
+  text-transform: inherit !important;
+  border: 0.5px solid #212121 !important;
+  color: #212121 !important;
   margin-right: 0 !important;
 }
-.btnDefault:hover{
-  color: #fff;
-  background-color: #212121;
+.btnDefaultPerfil:hover{
+  color: #fff !important;
+  background-color: #212121 !important;
 }
 .imageProfile{
   height: 450px;

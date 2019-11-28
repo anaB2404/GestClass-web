@@ -19,66 +19,14 @@
 
 <body>
 
-  <header>
-    <div class="navbar-fixed">
-      <nav class="light-blue lighten-1">
-        <div class="container">
-          <div class="nav-wrapper">
-            <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i
-                class="material-icons">menu</i></a>
-            <a href="homeSecretaria.html" class="brand-logo"><i class="fas fa-drafting-compass"></i> GestClass</a>
-            <ul class="right hide-on-med-and-down">
-              <li>
-                <a href="#user" class="transparent"><img class="circle icon-user" src="assets/img/pp.jpg"></a>
-              </li>
-              <li>
-                <a href="index.html" class="btn-flat btnDefault">Sair</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <ul id="slide-out" class="sidenav">
-      <li>
-        <div class="user-view">
-          <div class="background">
-            <img src="assets/img/slide2.png">
-          </div>
-          <a href="#user"><img class="circle" src="assets/img/pp.jpg"></a>
-          <a href="#name"><span class="white-text name">Ana Beatriz</span></a>
-          <a href="#email"><span class="white-text email">ana.lopes155@etec.sp.gov.br</span></a>
-        </div>
-      </li>
-      <li><a href="paginaManutencao.html"><i class="material-icons">person</i>Alunos</a></li>
-      <li><a href="paginaManutencao.html"><i class="material-icons">group</i>Classes</a></li>
-      <li><a href="paginaManutencao.html"><i class="material-icons">people_alt</i>Professores</a></li>
-      <li>
-        <div class="divider"></div>
-      </li>
-      <li><a class="subheader">Subheader</a></li>
-      <li><a class="waves-effect" href="calendario.php"><i class="material-icons">event</i>Calendario Escolar</a>
-      </li>
-      <li><a class="dropdown-trigger" href="paginaManutencao.html" data-target="dropdown1"><i
-            class="material-icons">group_add</i>Cadastro de contas<i
-            class="material-icons right">arrow_drop_down</i></a></li>
-      <ul id='dropdown1' class='dropdown-content'>
-        <li><a href="paginaManutencao.html"><i class="material-icons">people_alt</i>Professores</a></li>
-        <li><a href="paginaManutencao.html"><i class="material-icons">school</i>Secretaria</a></li>
-        <li><a href="paginaManutencao.html"><i class="material-icons">person</i>Alunos</a></li>
-        <li><a href="paginaManutencao.html"><i class="material-icons">wc</i>Pais</a></li>
-      </ul>
-    </ul>
-
-
-  </header>
+  <?php require_once 'reqMenu.php' ?>
 
   <section class="section center">
     <div class="container">
       <div class="row">
         <div class="col s12 m4">
-          <a href="paginaManutencao.html">
-            <div class="card-panel z-depth-5 cardZoom grey-text text-darken-4 hoverable">
+          <a href="paginaManutencao.php">
+            <div class="card-panel z-depth-3 cardZoom grey-text text-darken-4 hoverable">
               <i class="far fa-user fa-6x blue-icon"></i>
               <h5>Alunos</h5>
               <p>Acesso aos dados dos alunos, efetuação e remoção de matriculas, lista de alunos</p>
@@ -87,7 +35,7 @@
         </div>
         <div class="col s12 m4">
           <a href="calendario.php">
-            <div class="card-panel z-depth-5 cardZoom grey-text text-darken-4 hoverable">
+            <div class="card-panel z-depth-3 cardZoom grey-text text-darken-4 hoverable">
               <i class="fas fa-calendar-check fa-6x blue-icon"></i>
               <h5>Calendario Escolar</h5>
               <p>Adesão de eventos ao calendário de atividades acadêmicas</p>
@@ -95,8 +43,8 @@
           </a>
         </div>
         <div class="col s12 m4">
-          <a href="paginaManutencao.html">
-            <div class="card-panel z-depth-5 cardZoom grey-text text-darken-4 hoverable">
+          <a href="paginaManutencao.php">
+            <div class="card-panel z-depth-3 cardZoom grey-text text-darken-4 hoverable">
               <i class="fas fa-chalkboard-teacher fa-6x blue-icon"></i>
               <h5>Professores</h5>
               <p>Acesso total a dados dos professores, atribuição de classes, alterações de dados, etc</p>
@@ -104,8 +52,8 @@
           </a>
         </div>
         <div class="col s12 m4">
-          <a href="paginaManutencao.html">
-            <div class="card-panel z-depth-5 cardZoom grey-text text-darken-4 hoverable">
+          <a href="paginaManutencao.php">
+            <div class="card-panel z-depth-3 cardZoom grey-text text-darken-4 hoverable">
               <i class="fas fa-bell fa-6x blue-icon"></i>
               <h5>Notificações</h5>
               <p>Envio de notificações para pais e alunos, como a dispensa antes do horário, advertências, ocorrências,
@@ -114,8 +62,8 @@
           </a>
         </div>
         <div class="col s12 m4">
-          <a class="modal-trigger" href="#modal1">
-            <div class="card-panel z-depth-5 cardZoom grey-text text-darken-4 hoverable">
+          <a class="modal-trigger" href="#modalCadastroContas">
+            <div class="card-panel z-depth-3 cardZoom grey-text text-darken-4 hoverable">
               <i class="fas fa-address-book fa-6x blue-icon"></i>
               <h5>Cadastro de contas</h5>
               <p>Cadastro de novas contas ao aplicativo e remoção das mesmas, cadastro de novas contas de nível igual ou
@@ -124,8 +72,8 @@
           </a>
         </div>
         <div class="col s12 m4">
-          <a href="paginaManutencao.html">
-            <div class="card-panel z-depth-5 cardZoom grey-text text-darken-4 hoverable">
+          <a href="perfil.php">
+            <div class="card-panel z-depth-3 cardZoom grey-text text-darken-4 hoverable">
               <i class="fas fa-cog fa-6x blue-icon"></i>
               <h5>Configurações</h5>
               <p>Configurações da conta</p>
@@ -136,7 +84,7 @@
     </div>
   </section>
 
-  <div id="modal1" class="modal">
+  <div id="modalCadastroContas" class="modal">
     <div class="modal-content">
       <h4>Selecione o tipo de conta</h4>
       <div class="input-field col s12">
@@ -179,7 +127,7 @@
               <label for="icon_telephone">N° Matricula</label>
             </div>
             <div class="input-field right">
-              <button type="submit" class="btn-flat btnDefault">Cadastrar</button>
+              <button type="submit" class="btn-flat btnDefaultFormContas">Cadastrar</button>
             </div>
           </div>
         </div>
@@ -219,7 +167,7 @@
             <label for="icon_telephone">Rua</label>
           </div>
           <div class="input-field right">
-            <button type="submit" class="btn-flat btnDefault">Cadastrar</button>
+            <button type="submit" class="btn-flat btnDefaultFormContas">Cadastrar</button>
           </div>
         </div>
       </div>
@@ -266,7 +214,7 @@
             <label for="icon_telephone">Rua</label>
           </div>
           <div class="input-field right">
-            <button type="submit" class="btn-flat btnDefault">Cadastrar</button>
+            <button type="submit" class="btn-flat btnDefaultFormContas">Cadastrar</button>
           </div>
         </div>
       </div>
@@ -309,7 +257,7 @@
             <label for="icon_telephone">Rua</label>
           </div>
           <div class="input-field right">
-            <button type="submit" class="btn-flat btnDefault">Cadastrar</button>
+            <button type="submit" class="btn-flat btnDefaultFormContas">Cadastrar</button>
           </div>
         </div>
       </div>
@@ -323,11 +271,11 @@
         <i class="large material-icons">add</i>
       </a>
       <ul>
-        <li><a href="paginaManutencao.html" class="btn-floating black tooltipped" data-position="left"
+        <li><a href="paginaManutencao.php" class="btn-floating black tooltipped" data-position="left"
             data-tooltip="Gráfico de rendimento"><i class="material-icons">insert_chart</i></a></li>
-        <li><a href="paginaManutencao.html" class="btn-floating yellow darken-1 tooltipped" data-position="left"
+        <li><a href="paginaManutencao.php" class="btn-floating yellow darken-1 tooltipped" data-position="left"
             data-tooltip="Notificações"><i class="material-icons">notifications_active</i></a></li>
-        <li><a href="paginaManutencao.html" class="btn-floating blue-grey darken-4 tooltipped" data-position="left"
+        <li><a href="paginaManutencao.php" class="btn-floating blue-grey darken-4 tooltipped" data-position="left"
             data-tooltip="Chat"><i class="material-icons">chat</i></a></li>
         <li><a href="calendario.php" class="btn-floating blue tooltipped" data-position="left"
             data-tooltip="Calendario Escolar"><i class="material-icons">event</i></a></li>

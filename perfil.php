@@ -19,6 +19,8 @@
 
 <body>
 
+  <?php require_once 'reqMenu.php' ?>
+
   <section class="section">
     <div class="container">
       <div class="row">
@@ -27,19 +29,19 @@
             <form action="" enctype="multipart/form-data">
               <h3 class="center titleForm">Dados Pessoais</h3>
               <div class="input-field">
-                <img class="materialboxed imagePreview imageProfile" width="100%" />
+                <img class="materialboxed imagePreview imageProfile" src="assets/img/pp.jpg" />
               </div>
               <div class="input-field">
-                <input type="text" placeholder="Nome completo" class="inputLogin" />
+                <input type="text" placeholder="Nome completo" class="inputLogin" value="Ana Beatriz Rodrigues Lopes" />
               </div>
               <div class="input-field">
-                <input type="text" placeholder="Login" class="inputLogin" />
+                <input type="text" placeholder="Email" class="inputLogin" value="ana.lopes155@etec.sp.gov.br" />
               </div>
               <div class="input-field">
-                <input type="text" placeholder="Senha" class="inputLogin" />
+                <input type="password" placeholder="Senha" class="inputLogin" value="12341254125" />
               </div>
               <div class="input-field input-field-btn">
-                <button class="btn-flat btn-large btnDefault col s12" type="submit">Salvar alterações</button>
+                <button class="btn-flat btn-large btnDefaultPerfil col s12" type="submit">Salvar alterações</button>
               </div>
             </form>
           </div>
