@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -8,20 +8,20 @@ document.addEventListener('DOMContentLoaded', function () {
         editable: true,
         eventLimit: true,
         events: 'php/listarEventosCalendario.php',
-        extraParams: function () {
+        extraParams: function() {
             return {
                 cachebuster: new Date().valueOf()
             };
         },
 
-        eventClick: function (info) {
+        eventClick: function(info) {
             info.jsEvent.preventDefault();
 
             $('.modal #title').text(info.event.title);
             $('.modal #start').text(info.event.start.toLocaleString());
             $('.modal #end').text(info.event.end.toLocaleString());
 
-            $(document).ready(function () {
+            $(document).ready(function() {
                 var modal = M.Modal.init($('#modalInfo')[0]);
                 modal.open();
             });
@@ -31,17 +31,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
         selectable: true,
 
-        select: function (info) {
+        select: function(info) {
             // alert('Inicio do evento ' + info.start.toLocaleString())
             $('#modalCadastro #start').val(info.start.toLocaleString());
             $('#modalCadastro #end').val(info.end.toLocaleString());
 
-            $(document).ready(function () {
+            $(document).ready(function() {
                 var modal = M.Modal.init($('#modalCadastro')[0]);
                 modal.open();
             });
 
-            $(document).ready(function () {
+            $(document).ready(function() {
                 $('select').formSelect();
             });
         },
@@ -96,18 +96,18 @@ function DataHora(evento, objeto) {
 
 }
 
-$(document).ready(function () {
-    $("#adicionarEvento").on("submit", function (event) {
+$(document).ready(function() {
+    $('#adicionarEvento').on('submit', function(event) {
         event.preventDefault();
-       $.ajax({
+        $.ajax({
             method: "POST",
             url: "php/cadastrarEvento.php",
             data: new FormData(this),
             contentType: false,
             processData: false,
-            success: function (retorna) {
+            success: function(retorna) {
                 if (retorna['sit']) {
-                    //$(".msg-cad").html(retorna['msg']);
+                    // $(".msg-cad").html(retorna['msg']);
                     location.reload();
                 } else {
                     $(".msg-cad").html(retorna['msg']);
