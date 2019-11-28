@@ -14,6 +14,7 @@
   <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
   <link rel="stylesheet" type="text/css" href="css/default.css" />
   <link rel="stylesheet" type="text/css" href="css/menu.css" />
+  <link rel="stylesheet" type="text/css" href="css/homeSecretaria.css" />
 
 </head>
 
@@ -60,8 +61,8 @@
       <li><a class="waves-effect" href="calendario.php"><i class="material-icons">event</i>Calendario Escolar</a>
       </li>
       <li><a class="dropdown-trigger" href="paginaManutencao.php" data-target="dropdown1"><i
-            class="material-icons">group_add</i>Cadastro de contas<i
-            class="material-icons right">arrow_drop_down</i></a></li>
+            class="material-icons">group_add</i>Cadastro de contas
+            <i class="material-icons right" id="drop">arrow_drop_down</i></a></li>
       <ul id='dropdown1' class='dropdown-content'>
         <li><a href="paginaManutencao.php"><i class="material-icons">people_alt</i>Professores</a></li>
         <li><a href="paginaManutencao.php"><i class="material-icons">school</i>Secretaria</a></li>
