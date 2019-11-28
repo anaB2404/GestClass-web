@@ -1,0 +1,23 @@
+input::placeholder{
+  color: #000;
+}
+.btnDefault{
+  text-transform: inherit;
+  border: 0.5px solid #212121;
+  color: #212121;
+  margin-right: 0 !important;
+}
+.btnDefault:hover{
+  color: #fff;
+  background-color: #212121;
+}
+.imageProfile{
+  height: 450px;
+  width: 450px;
+}
+.formPerfil{
+  display: flex;
+  justify-content: center;
+  
+}
+
