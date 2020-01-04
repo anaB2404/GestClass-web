@@ -1,36 +1,3 @@
 .secao{
     padding: 40px 0;
 }
-.btn-flat{
-    margin-right: -10px !important;
-    transition: 0.2s;
-}
-.btnDefault{
-    text-transform: inherit;
-    border: 0.5px solid #fff;
-    color: #fff;
-}
-.btnDefault:hover{
-    background: #fff;
-    color: #29b6f6;
-}
-.btnLight{
-    text-transform: inherit;
-    border: 0.5px solid #29b6f6;
-    color: #29b6f6;
-}
-.btnLight:hover{
-    background: #29b6f6;
-    color: #fff;
-}
-.btnText{
-    text-transform: inherit;
-    color: #fff;
-}
-.btnText:hover{
-    background: #fff;
-    color: #29b6f6;
-}
-input::placeholder{
-    color: #000;
-}

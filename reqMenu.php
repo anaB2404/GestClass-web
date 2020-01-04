@@ -14,7 +14,6 @@
   <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
   <link rel="stylesheet" type="text/css" href="css/default.css" />
   <link rel="stylesheet" type="text/css" href="css/menu.css" />
-  <link rel="stylesheet" type="text/css" href="css/homeSecretaria.css" />
 
 </head>
 
@@ -28,12 +27,21 @@
             <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i
                 class="material-icons">menu</i></a>
             <a href="homeSecretaria.php" class="brand-logo"><i class="fas fa-drafting-compass"></i> GestClass</a>
-            <ul class="right hide-on-med-and-down">
+
+            <ul class="right">
               <li>
-                <a href="perfil.php" class="transparent"><img class="circle icon-user" src="assets/img/pp.jpg"></a>
+                <a class="transparent" disable>Olá Ana</a>
               </li>
               <li>
-                <a href="index.html" class="btn-flat btnDefault">Sair</a>
+                <a href="perfil.php" class="transparent">
+                  <img class="circle icon-user" width="50px" height="50px" src="assets/img/pp.jpg">
+                </a>
+              </li>
+              <li>
+                <div class="dividerVert"></div>
+              </li>
+              <li>
+                <a href="#" data-izimodal-open="#modalLogin" class="btn-flat btnLight">Sair</a>
               </li>
             </ul>
           </div>

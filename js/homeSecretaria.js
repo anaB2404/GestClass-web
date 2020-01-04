@@ -29,3 +29,12 @@ function habilitaForm(){
     $('#secretria').show(500)
   }
 }
+
+$(document).ready(function () {
+  $('.fixed-action-btn').floatingActionButton();
+});
+
+$(document).ready(function () {
+  $('.tooltipped').tooltip();
+});
+

@@ -27,11 +27,11 @@
             <nav class="light-blue lighten-1">
                 <div class="container">
                     <div class="nav-wrapper">
-                        <a href="index.html" class="brand-logo center">
+                        <a href="index.php" class="brand-logo center">
                             <i class="fas fa-drafting-compass"></i> 
                             <span class="hide-on-med-and-down">GestClass</span>
                         </a>
-                        <a href="index.html">
+                        <a href="index.php">
                             <i class="material-icons">keyboard_return</i>
                         </a>
                     </div>
@@ -46,10 +46,10 @@
                 <form class="grey-text text-darken-4">
                     <h2 class="">Formulário de contratação</h2>
                     <div class="input-field col s12 m6">
-                        <input type="text" placeholder="Nome da escola" class="inputLogin" />
+                        <input type="text" placeholder="Nome da escola" class="inputDark" />
                     </div>
                     <div class="input-field col s12 m6">
-                        <input type="text" placeholder="Nome do(a) diretor(a)" class="inputLogin" />
+                        <input type="text" placeholder="Nome do(a) diretor(a)" class="inputDark" />
                     </div>
                     <div class="input-field col s12 m6">
                         <select class="selectPlanos">
@@ -60,15 +60,15 @@
                         </select>
                     </div>
                     <div class="input-field col s12 m6">
-                        <input type="text" placeholder="Nome do(a) diretor(a)" class="inputLogin" />
+                        <input type="text" placeholder="Nome do(a) diretor(a)" class="inputDark" />
                     </div>
                     <div class="input-field col s12">
-                        <textarea class="materialize-textarea inputLogin" id="mensagemContato" placeholder="Escreva sua mensagem"
+                        <textarea class="materialize-textarea inputDark" id="mensagemContato" placeholder="Escreva sua mensagem"
                             maxlength="120"></textarea>
                         <span class="helper-text red-text" id="spanMensagemContato"></span>
                     </div>
                     <div class="input-field right-align col s12">
-                        <button type="submit" class="btn-flat btn-large btnLight">
+                        <button type="submit" class="btn-flat btn-large btnDark">
                             Enviar mensagem <i class="far fa-paper-plane"></i>
                         </button>
                     </div>
