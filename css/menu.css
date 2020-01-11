@@ -1,27 +1,11 @@
-
 .icon-user{
-  width:50px;
-  height: 50px;
-  padding: 0;
-  margin: 0;
-  margin-top:6px;
+    padding: 0;
+    margin: 0;
+    margin-top: 6px;
 }
-
-.btnDefault{
-    background-color: #42a5f5;
-    text-transform: inherit;
-    border: 0.5px solid #fff;
-    color: #fff;
-}
-
-.btnDefault:focus{
-  background-color: #42a5f5;
-  text-transform: inherit;
-  border: 0.5px solid #fff;
-  color: #fff;
-}
-
-.btnDefault:hover{
-    background: #fff;
-    color: #29b6f6;
+.dividerVert {
+    height: 50px;
+    width: 1px;
+    background-color: #fff;
+    margin: 6px 20px;
 }

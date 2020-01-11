@@ -22,7 +22,6 @@
     <link href='css/daygrid/main.min.css' rel='stylesheet' />
     <link href='css/list/main.min.css' rel='stylesheet' />
     <link rel="stylesheet" type="text/css" href="css/default.css" />
-    <link rel="stylesheet" type="text/css" href="css/homeSecretaria.css" />
     <link rel="stylesheet" type="text/css" href="css/calendario.css" />
 
     <!-- Arquivo JS -->
@@ -139,12 +138,8 @@
             </ul>
         </div>
     </section>
-
-    <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script> -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
-    <script src="js/homeSecretaria.js"></script>
     <script src="js/default.js"></script>
     <script src='js/calendario.js'></script>
 

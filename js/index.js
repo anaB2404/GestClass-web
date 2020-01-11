@@ -1,7 +1,3 @@
-// altura da tela
-var viewHeight = $(window).height();
-var menuHeight = $('.navbar-fixed').height();
-
 // Sidenav
 const sideNav = document.querySelector('.sidenav')
 M.Sidenav.init(sideNav, {})
@@ -29,7 +25,24 @@ window.onload = function () {
     window.requestAnimationFrame(updateLax)
 }
 
-// modal
-const modal = document.querySelector('.modal')
-M.Modal.init(modal, {})
+// izimodal
+$("#modalLogin").iziModal({
+    transitionIn: 'comingIn',
+    transitionOut: 'fadeOut'
+})
 
+// collapsible
+$(document).ready(function () {
+    $('.collapsible').collapsible();
+})
+
+// ver senha
+function verSenha() {
+    $('.btnVerSenha').toggleClass("fa-eye fa-eye-slash");
+    ;
+    if ($('.senhaLogin').attr("type") == "password") {
+        $('.senhaLogin').attr("type", "text");
+    } else {
+        $('.senhaLogin').attr("type", "password");
+    }
+}

@@ -1,25 +1,15 @@
-input::placeholder{
-  color: #000;
-}
-.btnDefaultPerfil{
-  text-transform: inherit !important;
-  border: 0.5px solid #212121 !important;
-  color: #212121 !important;
-  margin-right: 0 !important;
-}
-.btnDefaultPerfil:hover{
-  color: #fff !important;
-  background-color: #212121 !important;
-}
-.imageProfile{
-  height: 450px;
-  width: 450px;
+.descFoto{
+    visibility: hidden;
+    width: 0;
 }
 .formPerfil{
-  display: flex;
-  justify-content: center;
+    padding: 40px !important;
 }
-.titleForm{
-  margin: 0 !important;
+.iconVerSenha {
+    margin-right: 15px;
+    position: relative;
+    margin-top: -40px !important;
+    z-index: 5;
+    cursor: pointer;
 }
 
