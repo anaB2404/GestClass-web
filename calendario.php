@@ -81,7 +81,7 @@
                     </div>
                 </dl>
                 <div class="row">
-                    <span class="msg-cad"></span>
+                    <span id="msg-cad"></span>
                     <form id="adicionarEvento" class="col s12" method="POST">
                         <div class="row">
                             <div class="input-field col s12">
