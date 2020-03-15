@@ -4,7 +4,7 @@
 //     'localhost',
 //     'root',
 //     '',
-//     'calendario-db'
+//     'gestclass'
 // )
 //     or die('Erro ao estabelecer a conexão!!!');
 
@@ -17,4 +17,5 @@ define('PASS', '');
 define('DBNAME', 'calendario-db');
 
 $conn = new PDO('mysql:host=' . HOST . ';dbname=' . DBNAME . ';', USER, PASS);
+
 ?>

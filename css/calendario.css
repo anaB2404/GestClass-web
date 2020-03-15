@@ -17,5 +17,28 @@
 
 #modalCadastro {
     max-height: 100%;
-    overflow: visible;
+    overflow: inherit;
+    margin-top: -60px;
+}
+
+#modalInfo{
+    max-height: 100%;
+    overflow: inherit;
+    margin-top: -50px;
+}
+
+.modal-close{
+    position: absolute;
+    top:3px;
+    right:10px;
+    padding:0;
+    margin:0;
+}
+
+.visevent{
+    display: block; 
+}
+
+.formedit{
+    display: none;
 }

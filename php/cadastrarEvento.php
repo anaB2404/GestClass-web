@@ -35,7 +35,7 @@ $insert_event->bindParam(':end', $data_end_conv);
     else{
         $retorna = ['sit' => false, 
                 'msg' => '  <div class="card-panel red">
-                                 <span class="white-text text-darken-2">O evento foi cadastrado com sucesso!</span>
+                                 <span class="white-text text-darken-2">O evento não foi cadastrado com sucesso!</span>
                             </div>'];
 
     }

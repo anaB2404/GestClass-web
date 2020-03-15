@@ -18,9 +18,13 @@ document.addEventListener('DOMContentLoaded', function() {
             info.jsEvent.preventDefault();
 
             $('.modal #title').text(info.event.title);
+            $('.modal #title').val(info.event.title);
             $('.modal #start').text(info.event.start.toLocaleString());
+            $('.modal #start').val(info.event.start.toLocaleString());
             $('.modal #end').text(info.event.end.toLocaleString());
-
+            $('.modal #end').val(info.event.end.toLocaleString());
+            $('.model #color').val(info.event.backgroundColor);
+            
             $(document).ready(function() {
                 var modal = M.Modal.init($('#modalInfo')[0]);
                 modal.open();
@@ -115,4 +119,14 @@ $(document).ready(function () {
             }
         })
     });
+
+    $('.btn-canc-vis').on("click", function(){
+        $('.visevent').slideToggle();
+        $('.formedit').slideToggle();
+    })
+
+    $('.btn-canc-edit').on("click", function(){
+        $('.formedit').slideToggle();
+        $('.visevent').slideToggle(); 
+    })
 });

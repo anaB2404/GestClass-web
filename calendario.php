@@ -35,7 +35,7 @@
 </head>
 
 <body>
-    
+
     <?php require_once 'reqMenu.php' ?>
 
     <div id='loading'>loading...</div>
@@ -49,24 +49,78 @@
     <div id='calendar'></div>
 
     <section class="modals">
-        <div id="modalInfo" class="modal">
-            <div class="modal-content">
+        <div id="modalInfo" class="modal model">
+
+            <div class="modal-content" id="modalEdit">
+                <dd class="col s3"><a href="#!" class="modal-close waves-effect btn-flat right"><i class="material-icons">clear</i></a></dd>
                 <h4>Detalhes do evento</h4>
-                <dl class="row">
-                    <dt class="col s3 bolder">Titulo do evento</dt>
-                    <dd class="col s9" id="title"></dd><br>
+                <div class="visevent">
+                    <dl class="row">
+                        <dt class="col s3 bolder">Titulo do evento</dt>
+                        <dd class="col s9" id="title"></dd><br>
 
-                    <dt class="col s3 bolder">Início do evento</dt>
-                    <dd class="col s9" id="start"></dd><br>
+                        <dt class="col s3 bolder">Início do evento</dt>
+                        <dd class="col s9" id="start"></dd><br>
 
-                    <dt class="col s3 bolder">Fim do evento</dt>
-                    <dd class="col s9" id="end"></dd><br>
-                </dl>
+                        <dt class="col s3 bolder">Fim do evento</dt>
+                        <dd class="col s9" id="end"></dd><br>
+                    </dl>
+                    <button class="tbtn waves-effect btn-flat btnDark btn-canc-vis">Editar
+                    <i class="material-icons left">create</i>
+                    </button>
+                </div>
+                <div class="formedit">
+                <span id="msg-edit"></span>
+                    <form id="EditarEvento" class="col s12" method="POST">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">format_size</i>
+                                <input placeholder="" name="title" id="title" type="text" class="validate">
+                                <label for="icon_titulo">Titulo do evento</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">color_lens</i>
+                                <select class="" name="color" id="color">
+                                    <option value="" disabled selected>Escolha uma cor</option>
+                                    <option value="#FFD700" data-icon="assets/img/amarelo.jpg" class="left">Amarelo
+                                    </option>
+                                    <option value="#8B0000" data-icon="assets/img/vermelho.jpg" class="left">Vermelho
+                                    </option>
+                                    <option value="#228B22" data-icon="assets/img/verde.jpg" class="left">Verde</option>
+                                    <option value="#42A5F5" data-icon="assets/img/azul.jpg" class="left">Azul</option>
+                                    <option value="#A020F0" data-icon="assets/img/roxo.jpg" class="left">Roxo</option>
+                                    <option value="#000000" data-icon="assets/img/preto.jpg" class="left">Preto</option>
+                                </select>
+                                <!-- <label>Materialize Select</label> -->
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">event</i>
+                                <input placeholder="" name="start" id="start" type="text" class="validate"
+                                    onkeypress="DataHora(event, this)">
+                                <label for="first_name">Início do evento</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">event</i>
+                                <input placeholder="" name="end" id="end" type="text" class="validate"
+                                    onkeypress="DataHora(event, this)">
+                                <label for="first_name">Fim do evento</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn waves-effect btn-flat btnDarkFill btn-canc-edit left">Cancelar
+                        <i class="material-icons right">clear</i>
+                        </button>
+                            <button class="btn btn-flat waves-effect btnLightBlue" type="submit" name="cadEvento" id="cadEvento"value="cadEvento">Cadastrar
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
 
-            <div class="modal-footer">
+            <!-- <div class="modal-footer">
                 <a href="#!" class="modal-close waves-effect btn-flat btnDefault">Fechar</a>
-            </div>
+            </div> -->
         </div>
 
         <div id="modalCadastro" class="modal">
@@ -76,7 +130,8 @@
                         <dt class="col s9">
                             <h4>Cadastrar evento</h4>
                         </dt>
-                        <dd class="col s3"><a href="#!" class="modal-close waves-effect btn-flat right"><i class="material-icons">clear</i></a></dd>
+                        <dd class="col s3"><a href="#!" class="modal-close waves-effect btn-flat right"><i
+                                    class="material-icons">clear</i></a></dd>
                     </div>
                 </dl>
                 <div class="row">
@@ -92,8 +147,10 @@
                                 <i class="material-icons prefix">color_lens</i>
                                 <select class="" name="color" id="color">
                                     <option value="" disabled selected>Escolha uma cor</option>
-                                    <option value="#FFD700" data-icon="assets/img/amarelo.jpg" class="left">Amarelo</option>
-                                    <option value="#8B0000" data-icon="assets/img/vermelho.jpg" class="left">Vermelho</option>
+                                    <option value="#FFD700" data-icon="assets/img/amarelo.jpg" class="left">Amarelo
+                                    </option>
+                                    <option value="#8B0000" data-icon="assets/img/vermelho.jpg" class="left">Vermelho
+                                    </option>
                                     <option value="#228B22" data-icon="assets/img/verde.jpg" class="left">Verde</option>
                                     <option value="#42A5F5" data-icon="assets/img/azul.jpg" class="left">Azul</option>
                                     <option value="#A020F0" data-icon="assets/img/roxo.jpg" class="left">Roxo</option>
@@ -103,17 +160,20 @@
                             </div>
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">event</i>
-                                <input placeholder="" name="start" id="start" type="text" class="validate" onkeypress="DataHora(event, this)">
+                                <input placeholder="" name="start" id="start" type="text" class="validate"
+                                    onkeypress="DataHora(event, this)">
                                 <label for="first_name">Início do evento</label>
                             </div>
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">event</i>
-                                <input placeholder="" name="end" id="end" type="text" class="validate" onkeypress="DataHora(event, this)">
+                                <input placeholder="" name="end" id="end" type="text" class="validate"
+                                    onkeypress="DataHora(event, this)">
                                 <label for="first_name">Fim do evento</label>
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn waves-effect btnDefault" type="submit" name="cadEvento" id="cadEvento" value="cadEvento">Cadastrar
+                            <button class="btn btn-flat waves-effect btnLightBlue right" type="submit" name="cadEvento" id="cadEvento"
+                                value="cadEvento">Cadastrar
                                 <i class="material-icons right">send</i>
                             </button>
                         </div>
@@ -131,10 +191,14 @@
                 <i class="large material-icons">add</i>
             </a>
             <ul>
-                <li><a href="paginaManutencao.html" class="btn-floating black tooltipped" data-position="left" data-tooltip="Gráfico de rendimento"><i class="material-icons">insert_chart</i></a></li>
-                <li><a href="paginaManutencao.html" class="btn-floating yellow darken-1 tooltipped" data-position="left" data-tooltip="Notificações"><i class="material-icons">notifications_active</i></a></li>
-                <li><a href="paginaManutencao.html" class="btn-floating blue-grey darken-4 tooltipped" data-position="left" data-tooltip="Chat"><i class="material-icons">chat</i></a></li>
-                <li><a href="calendario.php" class="btn-floating blue tooltipped" data-position="left" data-tooltip="Calendario Escolar"><i class="material-icons">event</i></a></li>
+                <li><a href="paginaManutencao.html" class="btn-floating black tooltipped" data-position="left"
+                        data-tooltip="Gráfico de rendimento"><i class="material-icons">insert_chart</i></a></li>
+                <li><a href="paginaManutencao.html" class="btn-floating yellow darken-1 tooltipped" data-position="left"
+                        data-tooltip="Notificações"><i class="material-icons">notifications_active</i></a></li>
+                <li><a href="paginaManutencao.html" class="btn-floating blue-grey darken-4 tooltipped"
+                        data-position="left" data-tooltip="Chat"><i class="material-icons">chat</i></a></li>
+                <li><a href="calendario.php" class="btn-floating blue tooltipped" data-position="left"
+                        data-tooltip="Calendario Escolar"><i class="material-icons">event</i></a></li>
             </ul>
         </div>
     </section>
