@@ -9,9 +9,10 @@
 }
 
 
-#modalCadastroContas{
+#CadastarEscolas{
   max-height: 100%;
-  overflow: visible;
+  overflow: inherit;
+  margin-top: -60px;
 }
 
 #secretaria{
