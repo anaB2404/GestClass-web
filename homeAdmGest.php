@@ -154,12 +154,12 @@
                                 <label for="first_name">Estado</label>
                             </div>
                             <div class="input-field col s6">
-                                <i class="material-icons prefix">location_on</i>
+                                <i class="material-icons prefix">attach_money</i>
                                 <input placeholder="Bairro" name="end" id="end" type="text" class="validate">
                                 <label for="first_name">Data de pagamento</label>
                             </div>
                             <div class="input-field col s6">
-                                <i class="material-icons prefix">location_on</i>
+                                <i class="material-icons prefix">wc</i>
                                 <input placeholder="Bairro" name="end" id="end" type="text" class="validate">
                                 <label for="first_name">Quantidade de alunos</label>
                             </div>
