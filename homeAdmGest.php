@@ -19,7 +19,7 @@
 
 <body>
 
-    <?php require_once 'reqMenu.php' ?>
+    <?php require_once 'reqMenuAdm.php' ?>
 
     <section class="section center">
         <div class="container">
@@ -53,7 +53,7 @@
                     </a>
                 </div>
                 <div class="col s12 m4">
-                    <a href="calendario.php">
+                    <a href="paginaManutencao.php">
                         <div class="card-panel z-depth-3 cardZoom grey-text text-darken-4 hoverable">
                             <i class="fas fa-compass fa-6x blue-icon"></i>
                             <h5>Visão geral</h5>
@@ -98,42 +98,80 @@
                 </dl>
                 <div class="row">
                     <span id="msg-cad"></span>
-                    <form id="adicionarEvento" class="col s12" method="POST">
+                    <form id="adicionarEscola" class="col s12" method="POST">
                         <div class="row">
                             <div class="input-field col s6">
-                                <i class="material-icons prefix">format_size</i>
-                                <input id="icon_titulo" type="text" name="title" id="title" class="validate">
+                                <i class="material-icons prefix">account_balance</i>
+                                <input id="icon_titulo" type="text" name="nome_escola" id="nome_escola"
+                                    class="validate">
                                 <label for="icon_titulo">Nome Escola</label>
                             </div>
                             <div class="input-field col s6">
                                 <i class="material-icons prefix">business</i>
-                                <input placeholder="000.0000.0000/00-0" name="start" id="start" type="text"
+                                <input placeholder="000.0000.0000/00-0" name="cnpj" id="cnpj" type="text"
                                     class="validate">
                                 <label for="first_name">CNPJ</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s6">
+                            <i class="material-icons prefix">alternate_email</i>
+                                <input placeholder="gestclass@enterprise.com" name="email" id="email" type="email"
+                                    class="validate">
+                                <label for="email">Email</label>
+                                <span class="helper-text" data-error="wrong" data-success="right"></span>
+                            </div>
+                            <!-- <div class="input-field col s6">
                                 <i class="material-icons prefix">alternate_email</i>
-                                <input placeholder="gestclass@enterprise.com" name="end" id="end" type="text"
+                                <input placeholder="gestclass@enterprise.com" name="email" id="email" type="text"
                                     class="validate">
                                 <label for="first_name">Email</label>
-                            </div>
+                            </div> -->
                             <div class="input-field col s6">
                                 <i class="material-icons prefix">call</i>
                                 <input placeholder="+55 (11) 95945-7809" name="end" id="end" type="text"
                                     class="validate">
                                 <label for="first_name">Telefone</label>
                             </div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">location_on</i>
+                                <input placeholder="Endereço" name="end" id="end" type="text" class="validate">
+                                <label for="first_name">Logradouro</label>
+                            </div>
+                            <div class="input-field col s8">
+                                <i class="material-icons prefix">location_on</i>
+                                <input placeholder="Bairro" name="end" id="end" type="text" class="validate">
+                                <label for="first_name">Bairro</label>
+                            </div>
+                            <div class="input-field col s2">
+                                <!-- <i class="material-icons prefix">location_on</i> -->
+                                <input placeholder="Número" name="end" id="end" type="text" class="validate">
+                                <label for="first_name">Nº</label>
+                            </div>
+                            <div class="input-field col s2">
+                                <!-- <i class="material-icons prefix">location_on</i> -->
+                                <input placeholder="Estado" name="end" id="end" type="text" class="validate">
+                                <label for="first_name">Estado</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">location_on</i>
+                                <input placeholder="Bairro" name="end" id="end" type="text" class="validate">
+                                <label for="first_name">Data de pagamento</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">location_on</i>
+                                <input placeholder="Bairro" name="end" id="end" type="text" class="validate">
+                                <label for="first_name">Quantidade de alunos</label>
+                            </div>
                         </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-flat waves-effect btnDarkFill left" type="submit" name="cadEvento"
-                        id="cadEvento" value="cadEvento">Consultar
+                    <button class="btn btn-flat waves-effect btnDarkFill left" type="submit" name="cadEscola"
+                        id="cadEscola" value="cadEscola">Consultar
                         <i class="material-icons right">pageview</i>
                     </button>
-                    <button class="btn btn-flat waves-effect btnLightBlue right" type="submit" name="cadEvento"
-                        id="cadEvento" value="cadEvento">Cadastrar
+                    <button class="btn btn-flat waves-effect btnLightBlue right" type="submit" name="cascolato"
+                        id="cadEscola" value="cadEscola">Cadastrar
                         <i class="material-icons right">send</i>
                     </button>
                 </div>
